@@ -1,19 +1,168 @@
- #img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-    height: 200px;
+.container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container{
-    height: 350px;
-    width: 500px;
+.mainarticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     border: 1px solid lightgray;
-    left: 37%;
-    position: relative;
-    text-align: center;
+    border-radius: 5px;
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+}
+#signin{
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.mainarticle p {
+    margin-left: 30px;
+    margin-top: 0;
+    font-family: sans-serif;
+
+}
+.passwordlist{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    
+}
+.passwordlist li{
+    list-style: none;
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.passwordlist a {
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+.passwordlist a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+
+.emailbox {
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+.button1 {
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: orange;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 3px;
+
+}
+#help {
+    text-decoration: none; 
+    color: blue;
+    margin-left: px;
+    font-family: sans-serif;
+    font-size: 20px;
+       
+}
+#listhelp {
+    margin-left: 50px;
+    list-style: none;
+    margin-top: 20px;
+
+}
+
+#listhelp::before {
+    display: inline-block;
+    content: "";
+    border-top: 4px solid transparent;
+    border-left: 4px solid blue;
+    border-bottom: 4px solid transparent;
+    margin-right: 10px;
+}
+#help:visited {
+    text-decoration: none;
+    color: blue;
+}
+#amazonbutton{
+    margin-top: 30px;
+    height: 50px;
+    width: 575px;
+    font-size: 20px;
+    font-family: sans-serif;
     border-radius: 3px;
 }
-.sign-in{}
-
+footer {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid gray;
+    margin-top: 100px;
+}
+footer ul {
+    margin-right: 30px;
+    margin-top: 75px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+footer ul a{
+    text-decoration: none;
+}
+footer p{
+    display: flex;
+    width: 400px;
+    justify-content: right;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.separator {
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: gray;
+    width: 575px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid gray;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
